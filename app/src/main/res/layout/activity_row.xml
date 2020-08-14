@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:descendantFocusability = "blocksDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/itemname"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:text="Item"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/price"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="#090909"
+        android:text="Price"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="50dp"
+            android:clickable="true"
+            android:descendantFocusability = "blocksDescendants"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"></Button>
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textStyle="bold"
+            android:gravity="center"
+            ></EditText>
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="50dp"
+            android:clickable="true"
+            android:descendantFocusability = "blocksDescendants"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subtract"></Button>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
